@@ -453,7 +453,7 @@ export class ConfigUI extends PureComponent {
           <p>
             新功能建议或问题反馈请在&nbsp;
             <a
-              href="https://github.com/thuhole/thuhole-go-backend/issues"
+              href="mailto://pkuhollow@protonmail.com"
               target="_blank"
             >
               GitHub <span className="icon icon-github" />
