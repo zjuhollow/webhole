@@ -1,6 +1,6 @@
 [submodule "src/react-lazyload"]
 	path = src/react-lazyload
-	url = https://github.com/xmcp/react-lazyload
+	url = https://github.com/pkuhollow/react-lazyload
 
 [submodule "src/infrastructure"]
 	path = src/infrastructure
