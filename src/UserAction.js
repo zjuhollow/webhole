@@ -242,10 +242,7 @@ export function InfoSidebar(props) {
           <label>树洞规范</label>
         </a>
         &nbsp;&nbsp;
-        <a
-          href="mailto://pkuhollow@protonmail.com"
-          target="_blank"
-        >
+        <a href="mailto://pkuhollow@protonmail.com" target="_blank">
           <span className="icon icon-github" />
           <label>意见反馈</label>
         </a>
