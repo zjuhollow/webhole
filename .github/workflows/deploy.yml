@@ -14,15 +14,16 @@ jobs:
         run: |
           npm install
           npm run build
-          sed -i 's|https://cdn.jsdelivr.net/gh/pkuhollow/webhole@gh-pages/index.html|./index.html|g' build/*-*
-          sed -i 's|https://cdn.jsdelivr.net/gh/pkuhollow/webhole@gh-pages/service-worker.js|./service-worker.js|g' build/*-*
-          sed -i 's|"https://cdn.jsdelivr.net/gh/pkuhollow/webhole@gh-pages","/service-worker.js"|".","/service-worker.js"|' build/static/js/*.js
+          sed -i 's|https://cdn.jsdelivr.net/gh/pkuhollow/webhole@gh-pages-master/index.html|./index.html|g' build/*-*
+          sed -i 's|https://cdn.jsdelivr.net/gh/pkuhollow/webhole@gh-pages-master/service-worker.js|./service-worker.js|g' build/*-*
+          sed -i 's|"https://cdn.jsdelivr.net/gh/pkuhollow/webhole@gh-pages-master","/service-worker.js"|".","/service-worker.js"|' build/static/js/*.js
           sed -i 's|storage.googleapis.com/workbox-cdn/releases/4.3.1|cdn.jsdelivr.net/npm/workbox-cdn@4.3.1/workbox|g' build/service-worker.js
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.7.1
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: gh-pages # The branch the action should deploy to.
+          BRANCH: gh-pages-master # The branch the action should deploy to.
           FOLDER: build # The folder the action should deploy.
           CLEAN: true # Automatically remove deleted files from the deploy branch
+          SUBMODULES: true
