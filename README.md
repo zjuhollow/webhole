@@ -1,6 +1,4 @@
-网页版 未名树洞：[https://pkuhollow.com/](https://pkuhollow.com/)
-
-<!-- ![https://api.travis-ci.org/pkuhollow/webhole.svg?branch=master](https://api.travis-ci.org/pkuhollow/webhole.svg?branch=master) -->
+网页版 未名树洞：
 
 ## 安装方式
 ```bash
@@ -20,8 +18,7 @@ REACT_APP_BUILD_INFO=$VERSION_NUMBER npm run build
 
 ## CDN说明
 
-若要使用优秀的免费jsdelivr CDN加速主页.css/.js静态内容，
-请参见Travis部署脚本[./travis_deploy.sh](./travis_deploy.sh)。
+使用优秀的免费jsdelivr CDN加速主页.css/.js静态内容.
 
 ## 浏览器兼容
 
