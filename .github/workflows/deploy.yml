@@ -15,6 +15,8 @@ jobs:
       - name: Install and Build 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
         run: |
           npm install
+          VERSION_NUMBER="v$(grep -oP '"version": "\K[^"]+' package.json | head -n1)"
+          REACT_APP_BUILD_INFO=$VERSION_NUMBER npm run build
           npm run build
           sed -i 's|https://cdn.jsdelivr.net/gh/pkuhollow/webhole@gh-pages-master/index.html|./index.html|g' build/*-*
           sed -i 's|https://cdn.jsdelivr.net/gh/pkuhollow/webhole@gh-pages-master/service-worker.js|./service-worker.js|g' build/*-*
