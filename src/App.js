@@ -151,6 +151,11 @@ class App extends Component {
                       </LoginPopup>
                     </p>
                   </div>
+                  <div className="box box-tip">
+                    <p>
+                      <a href="propaganda.html">查看自述</a>
+                    </p>
+                  </div>
                 </div>
               )}
               {needShowSuicidePrompt(this.state.search_text) &&

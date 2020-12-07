@@ -573,6 +573,9 @@ class LoginPopupSelf extends Component {
             </p>
             <hr />
             <p style={{ fontSize: 11 }}>
+              <a href={process.env.REACT_APP_RULES_URL} rel="_blank">社区规范</a>
+            </p>
+            <p style={{ fontSize: 11 }}>
               This site is protected by reCAPTCHA and the Google{' '}
               <a href="https://policies.google.com/privacy">Privacy Policy</a>{' '}
               and{' '}
