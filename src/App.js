@@ -153,7 +153,7 @@ class App extends Component {
                   </div>
                   <div className="box box-tip">
                     <p>
-                      <a href="propaganda.html">查看自述</a>
+                      <a href="propaganda.html">什么是未名树洞？</a>
                     </p>
                   </div>
                 </div>
