@@ -255,11 +255,16 @@ export function InfoSidebar(props) {
         </p>
       </div>
       <div className="box help-desc-box">
-        <p>联系我们：{process.env.REACT_APP_CONTACT_EMAIL}</p>
+        <p>
+          联系我们：
+          <a href={'mailto:' + process.env.REACT_APP_CONTACT_EMAIL}>
+            {process.env.REACT_APP_CONTACT_EMAIL}
+          </a>
+        </p>
       </div>
       <div className="box help-desc-box">
         <p>
-          未名树洞 网页版 by @pkuhollow， 基于&nbsp;
+          未名树洞 网页版 by <a href="https://github.com/pkuhollow">@pkuhollow</a>， 基于&nbsp;
           <a
             href="https://www.gnu.org/licenses/gpl-3.0.zh-cn.html"
             target="_blank"

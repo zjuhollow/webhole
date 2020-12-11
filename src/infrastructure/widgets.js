@@ -572,6 +572,10 @@ class LoginPopupSelf extends Component {
               </button>
             </p>
             <hr />
+            <p style={{ fontSize: 14 }}>
+              出现问题？请及时联系<a href={"mailto:" + process.env.REACT_APP_CONTACT_EMAIL} rel="_blank">管理团队</a>
+            </p>
+            <hr />
             <p style={{ fontSize: 11 }}>
               <a href={process.env.REACT_APP_RULES_URL} rel="_blank">社区规范</a>
             </p>
