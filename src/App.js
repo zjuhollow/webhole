@@ -43,10 +43,10 @@ class App extends Component {
     this.on_pressure_bound = this.on_pressure.bind(this);
     // a silly self-deceptive approach to ban guests, enough to fool those muggles
     //                     document             cookie                    'pku_ip_flag=yes'
-    this.inthu_flag =
-      window[atob('ZG9jdW1lbnQ')][atob('Y29va2ll')].indexOf(
-        atob('dGh1X2lwX2ZsYWc9eWVz'),
-      ) === -1;
+    this.inthu_flag = true;
+    //   window[atob('ZG9jdW1lbnQ')][atob('Y29va2ll')].indexOf(
+    //     atob('dGh1X2lwX2ZsYWc9eWVz'),
+    //   ) === -1;
   }
 
   static is_darkmode() {
