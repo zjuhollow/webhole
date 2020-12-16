@@ -159,7 +159,7 @@ class App extends Component {
                         text="目前的邮箱验证受各方面因素影响，很可能会出现发件失败的情况。请各位耐心等待，稍后重试，不要连续点击。"
                       />
                       <HighlightedMarkdown
-                        text="[什么是未名树洞？](propaganda.html)"
+                        text="[什么是未名树洞？](https://www.pkuhollow.com/propaganda.html)"
                       />
                     </p>
                   </div>
