@@ -10,6 +10,7 @@ import { listen_darkmode } from './infrastructure/functions';
 import { LoginPopup, TitleLine } from './infrastructure/widgets';
 import { cache } from './cache';
 import './App.css';
+import { HighlightedMarkdown } from './Common';
 
 const MAX_SIDEBAR_STACK_SIZE = 10;
 
@@ -43,7 +44,7 @@ class App extends Component {
     this.on_pressure_bound = this.on_pressure.bind(this);
     // a silly self-deceptive approach to ban guests, enough to fool those muggles
     //                     document             cookie                    'pku_ip_flag=yes'
-    this.inthu_flag = true;
+    this.inthu_flag = false;
     //   window[atob('ZG9jdW1lbnQ')][atob('Y29va2ll')].indexOf(
     //     atob('dGh1X2lwX2ZsYWc9eWVz'),
     //   ) === -1;
@@ -153,7 +154,13 @@ class App extends Component {
                   </div>
                   <div className="box box-tip">
                     <p>
-                      <a href="propaganda.html">什么是未名树洞？</a>
+                      <h3>公告栏</h3>
+                      <HighlightedMarkdown
+                        text="目前的邮箱验证受各方面因素影响，很可能会出现发件失败的情况。请各位耐心等待，稍后重试，不要连续点击。"
+                      />
+                      <HighlightedMarkdown
+                        text="[什么是未名树洞？](propaganda.html)"
+                      />
                     </p>
                   </div>
                 </div>
