@@ -46,7 +46,7 @@ class App extends Component {
     this.inthu_flag =
       window[atob('ZG9jdW1lbnQ')][atob('Y29va2ll')].indexOf(
         atob('dGh1X2lwX2ZsYWc9eWVz'),
-      ) !== -1;
+      ) === -1;
   }
 
   static is_darkmode() {
