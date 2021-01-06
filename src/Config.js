@@ -29,6 +29,7 @@ const DEFAULT_CONFIG = {
   color_scheme: 'default',
   fold: true,
   block_words: [],
+  block_tags: ["性相关"],
 };
 
 export function load_config() {
@@ -398,6 +399,16 @@ export class ConfigUI extends PureComponent {
             id="block-words"
             callback={this.save_changes_bound}
           /> */}
+          <ConfigTextArea
+            id="block_tags"
+            callback={this.save_changes_bound}
+            name="设置屏蔽标签"
+            description={'带有屏蔽标签的树洞会被完全隐藏，每行写一个屏蔽标签'}
+            display={(array) => array.join('\n')}
+            sift={(array) => array.filter((v) => v)}
+            parse={(string) => string.split('\n')}
+          />
+          <hr />
           <ConfigTextArea
             id="block_words"
             callback={this.save_changes_bound}

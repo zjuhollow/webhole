@@ -953,6 +953,10 @@ class FlowItemRow extends PureComponent {
         window.config.block_words.some((word) =>
           props.info.text.includes(word),
         ) || this.needFold,
+      disappear:
+        window.config.block_tags.some((tag) =>
+          props.info.tag === tag
+        )
     };
     this.color_picker = this.props.color_picker || new ColorPicker();
   }
@@ -1198,6 +1202,10 @@ class FlowItemRow extends PureComponent {
         </div>
       </div>
     );
+
+    if (this.state.disappear) {
+        return (<div />);
+    }
 
     if (this.state.hidden) {
       return (
