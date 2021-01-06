@@ -954,7 +954,7 @@ class FlowItemRow extends PureComponent {
           props.info.text.includes(word),
         ) || this.needFold,
       disappear:
-        window.config.block_tags.some((tag) =>
+        window.config.hidden_tags.some((tag) =>
           props.info.tag === tag
         )
     };
