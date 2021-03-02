@@ -156,8 +156,9 @@ class App extends Component {
                     <p>
                       <h3>公告栏</h3>
                       <HighlightedMarkdown
-                        text="目前的邮箱验证受各方面因素影响，很可能会出现发件失败的情况。请各位耐心等待，稍后重试，不要连续点击。"
+                        text="近期因系统维护，暂关闭新用户注册和登陆功能。"
                       />
+                      <hr/>
                       <HighlightedMarkdown
                         text="[什么是未名树洞？](https://www.pkuhollow.com/propaganda.html)"
                       />

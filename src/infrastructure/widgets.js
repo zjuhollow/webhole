@@ -551,7 +551,8 @@ class LoginPopupSelf extends Component {
               </label>
               <button
                 type="button"
-                disabled={this.state.loading_status === 'loading'}
+                //disabled={this.state.loading_status === 'loading'}
+                disabled={true}
                 onClick={(e) => this.do_login(this.props.token_callback)}
               >
                 登录
