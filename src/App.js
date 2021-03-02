@@ -156,7 +156,7 @@ class App extends Component {
                     <p>
                       <h3>公告栏</h3>
                       <HighlightedMarkdown
-                        text="近期因系统维护，暂关闭新用户注册和登陆功能。预计结束日期：3月5日。"
+                        text="近期因系统维护，暂关闭新用户注册和登陆功能。预计结束日期：3月15日。"
                       />
                       <hr/>
                       <HighlightedMarkdown
