@@ -156,11 +156,11 @@ class App extends Component {
                     <p>
                       <h3>公告栏</h3>
                       <HighlightedMarkdown
-                        text="祝大家在未名树洞玩得开心！"
+                        text="我浙也有树洞了！"
                       />
                       <hr/>
                       <HighlightedMarkdown
-                        text="[什么是未名树洞？](https://www.pkuhollow.com/propaganda.html)"
+                        text="[浙大树洞用户协议](https://www.zjuhollow.com/policy.html)"
                       />
                     </p>
                   </div>
@@ -171,10 +171,10 @@ class App extends Component {
                   <div className="flow-item-row">
                     <div className="flow-item box box-tip">
                       <p style={{ textAlign: 'left' }}>需要帮助？</p>
-                      <p style={{ textAlign: 'left' }}>
+                      {/* <p style={{ textAlign: 'left' }}>
                         北京24小时心理援助热线：
                         <a href="tel:01082951332">010-8295-1332</a>
-                      </p>
+                      </p> */}
                       <p style={{ textAlign: 'left' }}>
                         希望24小时热线：
                         <a href="tel:4001619995">400-161-9995</a>

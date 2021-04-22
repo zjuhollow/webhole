@@ -49,8 +49,8 @@ const ADMIN_COMMANDS = [
 import { cache } from './cache';
 
 // const localStorage['img_base_url'] = 'https://thimg.yecdn.com/';
-// const localStorage['img_base_url_bak'] = 'https://img2.pkuhollow.com/';
-// const AUDIO_BASE=HOLE_API_ROOT+'services/pkuhollow/audios/';
+// const localStorage['img_base_url_bak'] = 'https://img2.zjuhollow.com/';
+// const AUDIO_BASE=HOLE_API_ROOT+'services/zjuhollow/audios/';
 
 const CLICKABLE_TAGS = { a: true, audio: true };
 const PREVIEW_REPLY_COUNT = 10;
@@ -1672,7 +1672,7 @@ export class Flow extends PureComponent {
                 &nbsp;Loading...
               </span>
             ) : (
-              '© pkuhollow'
+              '© zjuhollow'
             )
           }
         />

@@ -242,7 +242,7 @@ export function InfoSidebar(props) {
           <label>树洞规范</label>
         </a>
         &nbsp;&nbsp;
-        <a href="mailto:contact@pkuhollow.com" target="_blank">
+        <a href="mailto:zjuhollow@protonmail.com" target="_blank">
           <span className="icon icon-github" />
           <label>意见反馈</label>
         </a>
@@ -264,7 +264,7 @@ export function InfoSidebar(props) {
       </div>
       <div className="box help-desc-box">
         <p>
-          未名树洞 网页版 by <a href="https://github.com/pkuhollow">@pkuhollow</a>， 基于&nbsp;
+          浙大树洞 网页版 by <a href="https://github.com/zjuhollow">@zjuhollow</a>， 基于&nbsp;
           <a
             href="https://www.gnu.org/licenses/gpl-3.0.zh-cn.html"
             target="_blank"
@@ -272,13 +272,13 @@ export function InfoSidebar(props) {
             GPLv3
           </a>
           &nbsp;协议在{' '}
-          <a href="https://github.com/pkuhollow/webhole" target="_blank">
+          <a href="https://github.com/zjuhollow/webhole" target="_blank">
             GitHub
           </a>{' '}
           开源
         </p>
         <p>
-          未名树洞 网页版的诞生离不开&nbsp;
+          浙大树洞 网页版的诞生离不开&nbsp;
           <a
             href="https://github.com/pkuhelper-web/webhole"
             target="_blank"
@@ -388,7 +388,7 @@ export class LoginForm extends Component {
   copy_token(token) {
     if (copy(token))
       alert(
-        '复制成功！\n请一定不要泄露给其他人，或在pkuhollow.com以外的其他网站中输入token，否则可能会导致信息泄漏哦',
+        '复制成功！\n请一定不要泄露给其他人，或在zjuhollow.com以外的其他网站中输入token，否则可能会导致信息泄漏哦',
       );
   }
 
@@ -417,7 +417,7 @@ export class LoginForm extends Component {
                   </p>
                   {/*<p>*/}
                   {/*根据计算中心要求，访问授权三个月内有效，过期需重新登录。*/}
-                  {/*未名树洞将会单向加密(i.e. 哈希散列)您的邮箱后再存入数据库，因此您的发帖具有较强的匿名性。具体可见我们的<a href="https://github.com/pkuhollow/pkuhollow-go-backend/blob/76f56e6b75257b59e552b6bdba77e114151fcad1/src/db.go#L184">后端开源代码</a>。*/}
+                  {/*浙大树洞将会单向加密(i.e. 哈希散列)您的邮箱后再存入数据库，因此您的发帖具有较强的匿名性。具体可见我们的<a href="https://github.com/zjuhollow/zjuhollow-go-backend/blob/76f56e6b75257b59e552b6bdba77e114151fcad1/src/db.go#L184">后端开源代码</a>。*/}
                   {/*</p>*/}
                   <p>
                     <a
@@ -456,7 +456,7 @@ export class LoginForm extends Component {
                       <p>
                         <small>
                           {process.env.REACT_APP_TITLE}
-                          面向P大学生，通过P大邮箱验证您的身份并提供服务。
+                          面向浙大学生，通过浙大邮箱验证您的身份并提供服务。
                         </small>
                       </p>
                     </div>

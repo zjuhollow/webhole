@@ -1,8 +1,8 @@
-网页版 未名树洞：
+网页版 浙大树洞：
 
 ## 安装方式
 ```bash
-git clone https://github.com/pkuhollow/webhole
+git clone https://github.com/zjuhollow/webhole
 cd webhole
 git submodule update --init --recursive
 
@@ -14,7 +14,7 @@ VERSION_NUMBER="v$(grep -oP '"version": "\K[^"]+' package.json | head -n1)"
 REACT_APP_BUILD_INFO=$VERSION_NUMBER npm run build
 ```
 
-后端安装方式请见 [pkuhollow/pkuhollow-go-backend](https://github.com/pkuhollow/pkuhollow-go-backend )。
+后端安装方式请见 [zjuhollow/zjuhollow-go-backend](https://github.com/zjuhollow/zjuhollow-go-backend )。
 
 ## CDN说明
 
@@ -22,7 +22,7 @@ REACT_APP_BUILD_INFO=$VERSION_NUMBER npm run build
 
 ## 浏览器兼容
 
-下表为当前 未名树洞 网页版的浏览器兼容目标：
+下表为当前 浙大树洞 网页版的浏览器兼容目标：
 
 | 平台     | Desktop |                            |         | Windows  |      | macOS  | iOS    |                     | Android |                         |
 | -------- | ------- | -------------------------- | ------- | -------- | ---- | ------ | ------ | ------------------- | ------- | ----------------------- |
@@ -42,13 +42,13 @@ REACT_APP_BUILD_INFO=$VERSION_NUMBER npm run build
 
 ## 问题反馈
 
-对 未名树洞 网页版的 bug 反馈请在相应仓库提交 Issue。
+对 浙大树洞 网页版的 bug 反馈请在相应仓库提交 Issue。
 
 欢迎提出功能和 UI 建议，但可能不会被采纳。根据 GPL，你有权自行实现你的想法。
 
-不方便在 GitHub 上说明的问题可以邮件 contact@pkuhollow.com。邮件内容可能会被公开。
+不方便在 GitHub 上说明的问题可以邮件 zjuhollow@protonmail.com。邮件内容可能会被公开。
 
-对 未名树洞 后端服务、账号、树洞内容的反馈请联系邮件 contact@pkuhollow.com。
+对 浙大树洞 后端服务、账号、树洞内容的反馈请联系邮件 zjuhollow@protonmail.com。
 
 ## branch说明：
 - master branch: 主分支

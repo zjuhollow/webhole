@@ -16,13 +16,13 @@ jobs:
         run: |
           export DEPLOY_BRANCH="gh-pages-master"
           npm install
-          CDN_URL="https://cdn.jsdelivr.net/gh/pkuhollow/webhole@$DEPLOY_BRANCH"
+          CDN_URL="https://cdn.jsdelivr.net/gh/zjuhollow/webhole@$DEPLOY_BRANCH"
           VERSION_NUMBER="v$(grep -oP '"version": "\K[^"]+' package.json | head -n1)"
           echo "DEPLOY_BRANCH=$DEPLOY_BRANCH, VERSION_NUMBER=$VERSION_NUMBER, CDN_URL=$CDN_URL"
           CI=false PUBLIC_URL=$CDN_URL REACT_APP_BUILD_INFO=$VERSION_NUMBER npm run build
-          sed -i 's|https://cdn.jsdelivr.net/gh/pkuhollow/webhole@'"$DEPLOY_BRANCH"'/index.html|./index.html|g' build/*-*
-          sed -i 's|https://cdn.jsdelivr.net/gh/pkuhollow/webhole@'"$DEPLOY_BRANCH"'/service-worker.js|./service-worker.js|g' build/*-*
-          sed -i 's|"https://cdn.jsdelivr.net/gh/pkuhollow/webhole@'"$DEPLOY_BRANCH"'","/service-worker.js"|".","/service-worker.js"|' build/static/js/*.js
+          sed -i 's|https://cdn.jsdelivr.net/gh/zjuhollow/webhole@'"$DEPLOY_BRANCH"'/index.html|./index.html|g' build/*-*
+          sed -i 's|https://cdn.jsdelivr.net/gh/zjuhollow/webhole@'"$DEPLOY_BRANCH"'/service-worker.js|./service-worker.js|g' build/*-*
+          sed -i 's|"https://cdn.jsdelivr.net/gh/zjuhollow/webhole@'"$DEPLOY_BRANCH"'","/service-worker.js"|".","/service-worker.js"|' build/static/js/*.js
           sed -i 's|storage.googleapis.com/workbox-cdn/releases/4.3.1|cdn.jsdelivr.net/npm/workbox-cdn@4.3.1/workbox|g' build/service-worker.js
           
       - name: Deploy 🚀

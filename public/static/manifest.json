@@ -1,17 +1,17 @@
 {
   "short_name": "树洞",
-  "name": "未名树洞",
+  "name": "浙大树洞",
   "icons": [
     {
-      "src": "favicon/256.png",
+      "src": "favicon/256.jpg",
       "sizes": "256x256",
       "type": "image/png"
-    },
-    {
-      "src": "favicon/192.png",
-      "sizes": "192x192",
-      "type": "image/png"
     }
+    // {
+    //   "src": "favicon/192.png",
+    //   "sizes": "192x192",
+    //   "type": "image/png"
+    // }
   ],
   "start_url": "../",
   "display": "standalone",
