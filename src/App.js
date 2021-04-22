@@ -156,7 +156,7 @@ class App extends Component {
                     <p>
                       <h3>公告栏</h3>
                       <HighlightedMarkdown
-                        text="我浙也有树洞了！"
+                        text="浙个树洞欢迎您！"
                       />
                       <hr/>
                       <HighlightedMarkdown
